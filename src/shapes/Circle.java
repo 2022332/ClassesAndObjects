@@ -8,14 +8,11 @@ package shapes;
  *
  * @author Ari
  */
-public class Circle {
-    private int radius;
-
-    public int getRadius() {
-        return radius;
-    }
+public class Circle extends Shape{
+    private double radius;
     
-    public double getArea(){
-        return (3.141579 * radius * radius);
+    @Override
+    public double getArea() {
+        return 3.14 * radius * radius;
     }
 }
