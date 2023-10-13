@@ -11,9 +11,30 @@ import shapes.Triangle;
  * @author Ari
  */
 public class Person {
-    int age;
+     int age;
     String name;
     double height;
-    boolean isProgrammer;
-    Triangle favTriangle; //favorite triangle
+    private boolean isProgrammer = true;
+    private Triangle favTriangle; // favourite triangle
+    
+    public Person() {
+        age = 22;
+        name = "Ari";
+        System.out.println("Constructor 1");
+    }
+    
+    public Person(int age) {
+        this.age = age;
+        System.out.println("Constructor 2");
+    }
+    
+    public Person(int age, String name) {
+        this.age = age;
+        this.name = name;
+        System.out.println("Constructor 3");
+    }
+    
+    public Person(String name, int age) {
+        System.out.println("Constructor 4");
+    }
 }

@@ -5,6 +5,9 @@
 package classesandobjects;
 
 import shapes.Rectangle;
+import shapes.Shape;
+import shapes.Shapes2D;
+import shapes.Square;
 import shapes.Triangle;
 
 /**
@@ -45,11 +48,29 @@ public class ClassesAndObjects {
         sideLenghts[16] = 3;
         
         Person ari = new Person();
-        ari.favTriangle = tri4;
-        
+        //ari.favTriangle = tri4;
+       
+        System.out.println("--- Rectangles ---");
         Rectangle rect1 = new Rectangle();
+        Rectangle rect2 = new Rectangle(true, "Black", 5, 6);
         System.out.println(rect1.getArea());
-        System.out.println(rect1.getColor());
-        System.out.println(tri3.getColor());
+        
+        System.out.println(rect1.getColour());
+        System.out.println(tri5.getColour());
+        
+        Person p4 = new Person("Ari", 22);
+        Person p3 = new Person(32,"Per");
+        Person p1= new Person();
+        Person p2 = new Person(5);
+        
+
+        Square sq1 = new Square(true, "Purple", 10);
+        Rectangle sq2 = new Square(false, "Red", 5);
+        Shape sq3 = new Square(true, "Violet", 7);
+        Shape tri10 = new Triangle();
+        sq1.getArea();
+        
+        Shapes2D sq4 = new Square(true, "Black", 2);
+        sq4.calculateAngles();
     }  
 }
